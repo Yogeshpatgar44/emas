@@ -106,15 +106,19 @@ const Header = () => {
                 >
                   <ul className="block lg:flex lg:space-x-12">
                     {menuData.map((menuItem, index) => (
-                      <li key={index} className="group relative">
+                      <li key={index} className="group relative flex items-center">
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                              usePathName === menuItem.path
-                                ? "text-primary dark:text-white"
-                                : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
-                            }`}
+                            className={
+                              menuItem.title === "Contact Us"
+                                ? "ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 inline-flex items-center ml-7"
+                                : `flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                                    usePathName === menuItem.path
+                                      ? "text-primary dark:text-white"
+                                      : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                                  }`
+                            }
                           >
                             {menuItem.title}
                           </Link>
@@ -159,18 +163,6 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                <Link
-                  href="/signin"
-                  className="text-dark hidden px-7 py-3 text-base font-medium hover:opacity-70 md:block dark:text-white"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  href="/signup"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 hidden rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Sign Up
-                </Link>
                 <div>
                   <ThemeToggler />
                 </div>
