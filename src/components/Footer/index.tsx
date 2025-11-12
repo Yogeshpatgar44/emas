@@ -27,7 +27,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Your continued investment in new & modern technology need to be done wisely. You'll need technology partners who are committed to help you achieve your objectives. We are a strategic partner you can trust.
+                  Your continued investment in new & modern technology need to be done wisely. You{'\''}ll need technology partners who are committed to help you achieve your objectives. We are a strategic partner you can trust.
                 </p>
                 <div className="flex items-center">
                   <a

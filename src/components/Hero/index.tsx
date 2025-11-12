@@ -16,7 +16,7 @@ const Hero = () => {
                   Solutions for Every Business
                 </h1>
                 <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Since 1998, we've been delivering industry-leading ERP and business management software solutions to organizations across multiple sectors in the Middle East and beyond.
+                  Since 1998, we{'\''}ve been delivering industry-leading ERP and business management software solutions to organizations across multiple sectors in the Middle East and beyond.
                 </p>
                 <div className="flex flex-col items-start justify-start space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
